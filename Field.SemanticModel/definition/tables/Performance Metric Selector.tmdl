@@ -1,0 +1,49 @@
+table 'Performance Metric Selector'
+	lineageTag: e1a6b4d1-0f2a-4245-a041-ecfac8385157
+
+	column 'Performance Metric Selector'
+		lineageTag: 6d1b0f1d-dfba-48ce-becb-3d490889f525
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Performance Metric Selector Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Performance Metric Selector Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Performance Metric Selector Fields'
+		isHidden
+		lineageTag: d44094aa-6438-40ef-961d-2c00aebaf540
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Performance Metric Selector Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Performance Metric Selector Order'
+		isHidden
+		formatString: 0
+		lineageTag: f4162b70-de92-4489-ba58-fb9613db62cf
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Performance Metric Selector' = calculated
+		mode: import
+		source =
+				{
+				    ("Sales", NAMEOF('Retail_Sales_Data'[Sales]), 0),
+				    ("Profit", NAMEOF('Retail_Sales_Data'[Profit]), 1),
+				    ("Quantity", NAMEOF('Retail_Sales_Data'[Quantity]), 2)
+				}
+
+	annotation PBI_Id = 92d420089aaa46839caf0e2d56f81014
+

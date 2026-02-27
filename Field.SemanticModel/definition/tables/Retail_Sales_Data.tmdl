@@ -1,0 +1,75 @@
+table Retail_Sales_Data
+	lineageTag: aaefd7a8-0739-43e4-a06e-ed4aae95abc8
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ff3469ac-c96f-430b-b773-db7a4e59c5ed
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: 0d02c64c-af1e-4cb0-b1ae-1c528f427110
+			defaultHierarchy: LocalDateTable_71a18f7d-0efb-42d1-9aa0-3ae5f1cdbbf6.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Product
+		dataType: string
+		lineageTag: c9dd7dff-5bde-459a-9dc7-1b79a97d3fb3
+		summarizeBy: none
+		sourceColumn: Product
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: 9093a586-416d-4bd2-a772-38c4a97e9b2e
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sales
+		dataType: int64
+		formatString: 0
+		lineageTag: d60793d0-483b-454f-9da3-725cabe26c4e
+		summarizeBy: sum
+		sourceColumn: Sales
+
+		annotation SummarizationSetBy = Automatic
+
+	column Profit
+		dataType: int64
+		formatString: 0
+		lineageTag: 4750ac00-191d-4be4-a0eb-bf93bcc7e0cb
+		summarizeBy: sum
+		sourceColumn: Profit
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: int64
+		formatString: 0
+		lineageTag: 49a95c3c-7051-4a99-a750-252c15ba9ec0
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Retail_Sales_Data = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("D:\Retail_Sales_Data.xlsx"), null, true),
+				    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Date", type date}, {"Product", type text}, {"Region", type text}, {"Sales", Int64.Type}, {"Profit", Int64.Type}, {"Quantity", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
