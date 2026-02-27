@@ -1,0 +1,51 @@
+{
+  "config": "{\"version\":\"5.69\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY25SU12\",\"type\":2,\"version\":{\"visual\":\"2.5.0\",\"report\":\"3.1.0\",\"page\":\"2.3.0\"}}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY25SU12",
+            "path": "BaseThemes/CY25SU12.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "373dc26e920285961206",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"564ac16c14c04a5809b2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.605521030503024,\"y\":289.53784820516256,\"z\":1000,\"width\":310.1211075562405,\"height\":196.22707248027606,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Retail_Sales_Data.Region\"},{\"queryRef\":\"Retail_Sales_Data.Quantity\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"Retail_Sales_Data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Region\"},\"Name\":\"Retail_Sales_Data.Region\",\"NativeReferenceName\":\"Region\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Quantity\"},\"Name\":\"Retail_Sales_Data.Quantity\",\"NativeReferenceName\":\"Quantity\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Quantity\"}}}]},\"queryFieldParametersByRole\":{\"Values\":[{\"index\":1,\"length\":1,\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Performance Metric Selector\"}},\"Property\":\"Performance Metric Selector\"}},\"sortDirection\":1}]},\"columnProperties\":{\"Retail_Sales_Data.Region\":{\"formatString\":\"G\"},\"Retail_Sales_Data.Quantity\":{\"displayName\":\"Quantity\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"total\":[{\"properties\":{\"label\":{\"expr\":{\"Literal\":{\"Value\":\"'Total '\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 196.23,
+          "width": 310.12,
+          "x": 9.61,
+          "y": 289.54,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"6c21f9922b2a2a46a47a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"width\":280,\"height\":280,\"z\":0,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Performance Metric Selector.Performance Metric Selector\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Performance Metric Selector\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Performance Metric Selector\"},\"Name\":\"Performance Metric Selector.Performance Metric Selector\",\"NativeReferenceName\":\"Performance Metric Selector\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Performance Metric Selector\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Performance Metric Selector Fields\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'''Retail_Sales_Data''[Quantity]'\"}}]]}}}]}}}}]},\"cachedFilterDisplayItems\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Performance Metric Selector\"}},\"Property\":\"Performance Metric Selector Fields\"}},\"Right\":{\"Literal\":{\"Value\":\"'''Retail_Sales_Data''[Quantity]'\"}}}}},\"displayName\":\"Quantity\"}]}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
