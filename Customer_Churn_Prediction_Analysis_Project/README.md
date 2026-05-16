@@ -88,13 +88,9 @@ The purpose of this project is to:
 
 # Screenshots
 
-<img width="631" height="351" alt="image" src="https://github.com/user-attachments/assets/1f814b6f-c6b4-4390-865e-4d285e10741d" />
-</n>
-</n>
+###<img width="631" height="351" alt="image" src="https://github.com/user-attachments/assets/1f814b6f-c6b4-4390-865e-4d285e10741d" />
 
-
-
-<img width="628" height="349" alt="image" src="https://github.com/user-attachments/assets/e0031b0d-b313-4e27-a8e8-f634440ed00d" />
+###<img width="628" height="349" alt="image" src="https://github.com/user-attachments/assets/e0031b0d-b313-4e27-a8e8-f634440ed00d" />
 
 
 
