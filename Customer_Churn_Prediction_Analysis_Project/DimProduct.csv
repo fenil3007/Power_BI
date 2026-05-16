@@ -1,0 +1,28 @@
+ProductID,ProductName,Category,SubCategory,Brand,UnitPrice
+1,Dell Laptop,Electronics,Laptop,Lenovo,604.85
+2,HP Laptop,Electronics,Laptop,Canon,165.54
+3,Apple Laptop,Electronics,Laptop,HP,772.4
+4,Canon Phone,Electronics,Phone,HP,1484.52
+5,Apple Phone,Electronics,Phone,Apple,230.97
+6,Dell Phone,Electronics,Phone,Apple,900.58
+7,Apple Tablet,Electronics,Tablet,Dell,282.36
+8,HP Tablet,Electronics,Tablet,Samsung,908.71
+9,Lenovo Tablet,Electronics,Tablet,Lenovo,827.93
+10,Dell Chair,Furniture,Chair,Dell,720.75
+11,Dell Chair Lenovo,Furniture,Chair,Lenovo,1204.13
+12,Apple Chair,Furniture,Chair,Samsung,44.43
+13,Samsung Desk,Furniture,Desk,Samsung,1562.75
+14,Canon Desk,Furniture,Desk,Lenovo,1812.31
+15,HP Desk,Furniture,Desk,Lenovo,1051.79
+16,Canon Cabinet,Furniture,Cabinet,Samsung,355.61
+17,Apple Cabinet,Furniture,Cabinet,Apple,551.45
+18,HP Cabinet,Furniture,Cabinet,Dell,351.07
+19,Apple Paper,Office Supplies,Paper,Samsung,613.51
+20,Dell Paper,Office Supplies,Paper,Apple,518.37
+21,HP Paper,Office Supplies,Paper,Canon,1257.57
+22,Lenovo Printer,Office Supplies,Printer,Lenovo,407.19
+23,Dell Printer,Office Supplies,Printer,HP,623.22
+24,Samsung Printer,Office Supplies,Printer,Apple,1686.39
+25,Samsung Pen,Office Supplies,Pen,Apple,891.64
+26,Samsung Pen Canon,Office Supplies,Pen,Canon,1948.97
+27,HP Pen,Office Supplies,Pen,Apple,654.92
